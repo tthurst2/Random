@@ -29,7 +29,7 @@ for(var i = 0; i < 10000; i++) {
             default:
                 console.log("error EoB");
             }
-            //onsole.log(roll1 + " " +  roll2 + " " + roll3 + " " + roll4 + ":" + x);
+            //console.log(roll1 + " " +  roll2 + " " + roll3 + " " + roll4 + ":" + x);
     }
     roll1 = false; roll2 = false; roll3 = false; roll4 = false;
     totalTries.push(numTries);
