@@ -9,7 +9,7 @@ function d4() {
 console.log(d4);
 
 for(var i = 0; i < 10000; i++) {
-    
+    numTries = 0;
     while((roll1 && roll2 && roll3 && roll4) === false) {
         x = d4();
         numTries++;
@@ -29,9 +29,9 @@ for(var i = 0; i < 10000; i++) {
             default:
                 console.log("error EoB");
             }
-            //console.log(roll1 + " " +  roll2 + " " + roll3 + " " + roll4 + ":" + x);
     }
     roll1 = false; roll2 = false; roll3 = false; roll4 = false;
-    totalTries.push(numTries);
-    console.log(numTries/(i+1));
+    totalTries.push(numTries);    
 }
+// output average
+console.log(totalTries.reduce(function(a,b) {return a + b; }, 0)/ i);
