@@ -45,5 +45,6 @@ function add(firstName, lastName, phoneNumber, email) {
 }
 add("Tyler", "Thurston", "8675309", "tyler@dank.net");
 list();
+console.log(contacts[2].firstName + " rules");
 
 
